@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lorenz Attractor</title>
+        <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            button {
+                font-family: 'Helvetica', 'Arial';
+                color: #ccc;
+                background-color: #333;
+                border: 2px solid #ccc;
+                border-radius: 10px;
+                padding: 5px 10px;
+            }
+            button:hover, button:active {
+                color: #fff;
+                border-color: #fff;
+            }
+            button:focus {
+                outline:0;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="libs/p5.min.js"></script>
+        <script src="libs/p5.dom.js"></script>
+        <script src="libs/stats.min.js"></script>
+        <script src="index.js"></script>
+        <script type="text/javascript">
+        let game;
+
+        function setup() { game = new Game() }
+        function draw() { game.draw() }
+        </script>
+    </body>
+</html>
